@@ -2,14 +2,15 @@ var path = require('path')
 var config = require('../config')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-exports.assetsPath = function (_path) {
-  var assetsSubDirectory = process.env.NODE_ENV === 'production'
-    ? config.build.assetsSubDirectory
-    : config.dev.assetsSubDirectory
+exports.assetsPath = function(_path) {
+  var assetsSubDirectory =
+    process.env.NODE_ENV === 'production'
+      ? config.build.assetsSubDirectory
+      : config.dev.assetsSubDirectory
   return path.posix.join(assetsSubDirectory, _path)
 }
 
-exports.cssLoaders = function (options) {
+exports.cssLoaders = function(options) {
   options = options || {}
 
   var cssLoader = {
@@ -36,7 +37,7 @@ exports.cssLoaders = function (options) {
   }
 
   // generate loader string to be used with extract text plugin
-  function generateLoaders (loader, loaderOptions) {
+  function generateLoaders(loader, loaderOptions) {
     var loaders = [cssLoader, px2rpxLoader, postcssLoader]
     if (loader) {
       loaders.push({
@@ -66,14 +67,19 @@ exports.cssLoaders = function (options) {
     postcss: generateLoaders(),
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
-    scss: generateLoaders('sass'),
+    scss: generateLoaders('sass').concat({
+      loader: 'sass-resources-loader',
+      options: {
+        resources: path.resolve(__dirname, '../src/utils/css/common.scss')
+      }
+    }),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
 }
 
 // Generate loaders for standalone style files (outside of .vue)
-exports.styleLoaders = function (options) {
+exports.styleLoaders = function(options) {
   var output = []
   var loaders = exports.cssLoaders(options)
   for (var extension in loaders) {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="card">
+    <p class="zp-card">
       {{text}}
     </p>
   </div>
@@ -8,12 +8,14 @@
 
 <script>
 export default {
-  props: ['text']
+  props: {
+    text: String
+  }
 }
 </script>
 
-<style>
-.card {
-  padding: 10px;
+<style lang="scss">
+.zp-card {
+  color: $RED;
 }
 </style>
