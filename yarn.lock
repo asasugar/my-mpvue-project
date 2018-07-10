@@ -3422,6 +3422,10 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
+mp-weui@^1.0.4:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/mp-weui/download/mp-weui-1.0.4.tgz#395baf05fbc8eb7d1460305bc083dda8fd7856b8"
+
 mpvue-loader@^1.0.13:
   version "1.0.15"
   resolved "http://registry.npm.taobao.org/mpvue-loader/download/mpvue-loader-1.0.15.tgz#1ed2f8818f8c19c138953aad88ee72f933a315d9"
@@ -3454,6 +3458,17 @@ mpvue-template-compiler@^1.0.11:
 mpvue-webpack-target@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/mpvue-webpack-target/download/mpvue-webpack-target-1.0.1.tgz#203995b7ab63f1c80fb72acf870962c549fc43c7"
+
+mpvue-weui@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/mpvue-weui/download/mpvue-weui-1.0.0.tgz#995351f6b2b6e7fff9f217c77e569d8d390dabd5"
+  dependencies:
+    mpvue "1.0.1"
+    vuex "^2.3.1"
+
+mpvue@1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/mpvue/download/mpvue-1.0.1.tgz#e1cff387117f163012bb85b4f1534091c0b73a06"
 
 mpvue@^1.0.11:
   version "1.0.13"
@@ -5556,6 +5571,10 @@ vue-style-loader@^4.1.0:
 vue-template-es2015-compiler@^1.5.3, vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
+
+vuex@^2.3.1:
+  version "2.5.0"
+  resolved "http://registry.npm.taobao.org/vuex/download/vuex-2.5.0.tgz#20f0265ade6c9a5ac6724a405d3ffdb4726c9741"
 
 vuex@^3.0.1:
   version "3.0.1"

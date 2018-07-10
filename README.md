@@ -25,6 +25,7 @@
 ## 文档地址
 
 * [vue](https://cn.vuejs.org).
+* [mpvue-weui](http://kuangpf.com/mpvue-weui/#/).
 * [mpvue](http://mpvue.com/mpvue/).
 * [flyio](https://wendux.github.io/dist/#/doc/flyio/wx)
 
@@ -85,7 +86,6 @@ body{
 ## ajax 使用
 
 ```
-import request from 'utils/js/request.js'
 export default {
   name: 'HelloWorld',
   mounted () {
@@ -93,7 +93,7 @@ export default {
   },
   methods: {
     async getList () {
-      const data = await request({ method: 'post', url: '/api/htmlModuleManage/seachByNo', data: { 'htmlModuleManage.htmlNo': 'WAP_BANNER' } })
+      const data = await this.$http({ method: 'post', url: '/api/htmlModuleManage/seachByNo', data: { 'htmlModuleManage.htmlNo': 'WAP_BANNER' } })
       console.log(data)
     }
   }
