@@ -17,6 +17,8 @@ export default {
       template: new Canvas().palette()
     }
   },
+  components: {
+  },
   created () {
 
   },

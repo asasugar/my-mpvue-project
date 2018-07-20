@@ -1,3 +1,21 @@
-$RED: red;
 $WHITE: #fff;
 $BLACK: #000;
+$RED: red;
+/* 字体 */
+@font-face {
+  font-family: 'iconfont'; /* project id 756061 */
+  src: url('//at.alicdn.com/t/font_756061_1clogm5xt2h.eot');
+  src: url('//at.alicdn.com/t/font_756061_1clogm5xt2h.eot?#iefix')
+      format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_756061_1clogm5xt2h.woff') format('woff'),
+    url('//at.alicdn.com/t/font_756061_1clogm5xt2h.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_756061_1clogm5xt2h.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -32,25 +32,25 @@ export default {
           pagePath: 'pages/weChat/main',
           text: '微信',
           iconPath: '/static/WeChat.png',
-          selectedIconPath: '/static/wechat (1).png'
+          selectedIconPath: '/static/Wechat1.png'
         },
         {
           pagePath: 'pages/contact/main',
           text: '通讯录',
           iconPath: '/static/nav_contacts.png',
-          selectedIconPath: '/static/nav_contacts (1).png'
+          selectedIconPath: '/static/nav_contacts1.png'
         },
         {
           pagePath: 'pages/discovery/main',
           text: '发现',
           iconPath: '/static/discovery.png',
-          selectedIconPath: '/static/discovery (1).png'
+          selectedIconPath: '/static/discovery1.png'
         },
         {
           pagePath: 'pages/my/main',
           text: '我',
           iconPath: '/static/me.png',
-          selectedIconPath: '/static/me (1).png'
+          selectedIconPath: '/static/me1.png'
         }
       ]
     }
