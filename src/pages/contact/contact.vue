@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="weui-cells__title">带图标、说明的列表项</div>
+    <div class="weui-cells__title">带图标、说明的列表</div>
     <div class="weui-cells weui-cells_after-title">
       <div class="weui-cell">
         <div class="weui-cell__hd">
