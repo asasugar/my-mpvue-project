@@ -19,10 +19,8 @@ export default {
     // 页面前带有 ^ 符号的，会被编译成首页，其他页面可以选填，我们会自动把 webpack entry 里面的入口页面加进去
     pages: ['^pages/weChat/main'],
     window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: '微信',
-      navigationBarTextStyle: 'black'
+      navigationBarBackgroundColor: '#000',
+      navigationBarTextStyle: 'light'
     },
     tabBar: {
       color: '#8a8a8a',
@@ -32,7 +30,7 @@ export default {
           pagePath: 'pages/weChat/main',
           text: '微信',
           iconPath: '/static/WeChat.png',
-          selectedIconPath: '/static/Wechat1.png'
+          selectedIconPath: '/static/WeChat1.png'
         },
         {
           pagePath: 'pages/contact/main',
@@ -53,7 +51,8 @@ export default {
           selectedIconPath: '/static/me1.png'
         }
       ]
-    }
+    },
+    onReachBottomDistance: 50
   },
   debug: true
 }
