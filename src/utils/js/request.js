@@ -31,7 +31,7 @@ const request = (
 ) => {
   let config = {
     url,
-    data,
+    body:data,
     method,
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
